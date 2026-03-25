@@ -1,3 +1,5 @@
+# Note: need to give CI permissions
+#  Settings -> Workflow permissions -> Read and Write
 name: Sync README from Google Docs
 
 on:
