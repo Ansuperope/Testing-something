@@ -1,0 +1,33 @@
+name: Sync README from Google Docs
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # every hour
+  workflow_dispatch:     # manual trigger button
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install Pandoc
+        run: sudo apt-get install -y pandoc
+
+      - name: Download Google Doc
+        run: |
+          curl -L "https://docs.google.com/document/d/1000SSXmp7nY84KODqMCJnEy-OB3xn_8XsIbTUU7kL7E/export?format=docx" -o doc.docx
+
+      - name: Convert to README.md
+        run: |
+          pandoc doc.docx -o README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update README from Google Docs"
+          git push
