@@ -27,7 +27,7 @@ jobs:
 
       - name: Convert to README.md
         run: |
-          pandoc doc.docx -o README.md
+          pandoc doc.docx -t html -o README.md
 
       - name: Commit changes
         run: |
