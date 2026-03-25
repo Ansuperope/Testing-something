@@ -320,11 +320,160 @@ Sensor BME280 | Bosch Sensortec</u></a></p></th>
 </colgroup>
 <thead>
 <tr class="header">
-<th colspan="2"><h2 id="general-notes">General Notes</h2></th>
+<th colspan="2"><h2 id="teensy---controller">Teensy -
+Controller</h2></th>
 </tr>
 <tr class="odd">
+<th><a href="https://www.pjrc.com/store/teensy41.html"><u>Teensy®
+4.1</u></a></th>
 <th></th>
+</tr>
+<tr class="header">
+<th colspan="2">Need to Know</th>
+</tr>
+<tr class="odd">
+<th>Power:</th>
+<th><blockquote>
+<p>3.3V or 5V</p>
+</blockquote></th>
+</tr>
+<tr class="header">
+<th>Weight:</th>
 <th></th>
+</tr>
+<tr class="odd">
+<th>Protocol:</th>
+<th></th>
+</tr>
+<tr class="header">
+<th>Stability Time (set delay):</th>
+<th><blockquote>
+<p>30sec after power on</p>
+</blockquote></th>
+</tr>
+<tr class="odd">
+<th>Rate:</th>
+<th></th>
+</tr>
+<tr class="header">
+<th>Temp:</th>
+<th><blockquote>
+<p>-10 ~ 60 C</p>
+</blockquote></th>
+</tr>
+<tr class="odd">
+<th>Humidify:</th>
+<th><blockquote>
+<p>10% ~ 90% RH (non-condensing)</p>
+</blockquote></th>
+</tr>
+<tr class="header">
+<th colspan="2">Pinout</th>
+</tr>
+<tr class="odd">
+<th><img src="assets/media/image1.png"
+style="width:3.10417in;height:4.38889in" /></th>
+<th><img src="assets/media/image3.png"
+style="width:3.10417in;height:4.38889in" /></th>
+</tr>
+<tr class="header">
+<th><p>Pins for I2C:</p>
+<ul>
+<li><blockquote>
+<p>SCL = clock</p>
+</blockquote></li>
+<li><blockquote>
+<p>SDA = address</p>
+</blockquote></li>
+</ul></th>
+<th><p>Can connect 3 places:</p>
+<ol type="1">
+<li><blockquote>
+<p>First</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>19 -&gt; SCL</p>
+</blockquote></li>
+<li><blockquote>
+<p>18 -&gt; SDA</p>
+</blockquote></li>
+</ol></li>
+<li><blockquote>
+<p>Second</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>16 -&gt; SCL</p>
+</blockquote></li>
+<li><blockquote>
+<p>17 -&gt; SDA</p>
+</blockquote></li>
+</ol></li>
+<li><blockquote>
+<p>Third</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>24 -&gt; SCL</p>
+</blockquote></li>
+<li><blockquote>
+<p>25 -&gt; SDA</p>
+</blockquote></li>
+</ol></li>
+</ol></th>
+</tr>
+<tr class="odd">
+<th><p>Pins for Power:</p>
+<ul>
+<li><blockquote>
+<p>V = power</p>
+</blockquote></li>
+<li><blockquote>
+<p>GND = ground</p>
+</blockquote></li>
+</ul></th>
+<th><p>Can Power at 3 Places</p>
+<p>Power</p>
+<ol type="1">
+<li></li>
+</ol></th>
+</tr>
+<tr class="header">
+<th><p>Pins for URAT</p>
+<ul>
+<li><blockquote>
+<p>RX = receiving</p>
+</blockquote></li>
+<li><blockquote>
+<p>TX = transmitting</p>
+</blockquote></li>
+</ul></th>
+<th><p>Can have 7 places:</p>
+<ol type="1">
+<li><blockquote>
+<p>first</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>0 -&gt; RX</p>
+</blockquote></li>
+<li><blockquote>
+<p>1 -&gt; TX</p>
+</blockquote></li>
+</ol></li>
+<li><blockquote>
+<p>s</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>7 -&gt; RX</p>
+</blockquote></li>
+<li><blockquote>
+<p>8 -&gt; TX</p>
+</blockquote></li>
+</ol></li>
+</ol></th>
 </tr>
 </thead>
 <tbody>
@@ -403,7 +552,7 @@ href="https://wiki.seeedstudio.com/Grove-Laser_PM2.5_Sensor-HM3301/"><u>Grove
 </tr>
 <tr class="odd">
 <th><p>Pinout</p>
-<p><img src="assets/media/image3.png"
+<p><img src="assets/media/image5.png"
 style="width:3.10417in;height:1.79167in" /></p></th>
 <th><blockquote>
 <p>GND Black GND 5</p>
@@ -489,9 +638,9 @@ Shuttle Board 3.0 Flyer</u></a></p></th>
 <th colspan="2">Pinout</th>
 </tr>
 <tr class="odd">
-<th><p><img src="assets/media/image2.png"
+<th><p><img src="assets/media/image6.png"
 style="width:3.10417in;height:1.54167in" /></p>
-<p><img src="assets/media/image1.png"
+<p><img src="assets/media/image2.png"
 style="width:3.10417in;height:1.66667in" /></p></th>
 <th><p>I2C</p>
 <ul>
@@ -748,6 +897,9 @@ that will determine when something will execute / run</th>
 data:</p>
 <ol type="1">
 <li><blockquote>
+<p>time</p>
+</blockquote></li>
+<li><blockquote>
 <p>particulates</p>
 </blockquote></li>
 <li><blockquote>
@@ -759,21 +911,70 @@ data:</p>
 <li><blockquote>
 <p>humidity</p>
 </blockquote></li>
+<li><blockquote>
+<p>flight path</p>
+</blockquote></li>
 </ol>
 <p>to csv files:</p>
 <ol type="1">
 <li><blockquote>
 <p>particulates.csv</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>time</p>
 </blockquote></li>
+<li><blockquote>
+<p>particulates</p>
+</blockquote></li>
+</ol></li>
 <li><blockquote>
 <p>gasses.csv</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>time</p>
 </blockquote></li>
+<li><blockquote>
+<p>gass</p>
+</blockquote></li>
+</ol></li>
 <li><blockquote>
 <p>pressure.csv</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>time</p>
 </blockquote></li>
 <li><blockquote>
-<p>humidity.csv</p>
+<p>pressure</p>
 </blockquote></li>
+</ol></li>
+<li><blockquote>
+<p>humidity.csv</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>time</p>
+</blockquote></li>
+<li><blockquote>
+<p>humidity</p>
+</blockquote></li>
+</ol></li>
+<li><blockquote>
+<p>flight.csv</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>time</p>
+</blockquote></li>
+<li><blockquote>
+<p>orientation</p>
+</blockquote></li>
+<li><blockquote>
+<p>location</p>
+</blockquote></li>
+</ol></li>
 </ol>
 <p>and transmit it to us live</p></th>
 </tr>
