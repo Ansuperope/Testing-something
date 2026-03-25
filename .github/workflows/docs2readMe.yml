@@ -1,6 +1,9 @@
 name: Sync README from Google Docs
 
 on:
+  push:
+    branches:
+    - main
   schedule:
     - cron: "0 * * * *"  # every hour
   workflow_dispatch:     # manual trigger button
