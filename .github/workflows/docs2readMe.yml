@@ -1,5 +1,10 @@
-# Note: need to give CI permissions
+# Note: need to give CI permissions or else it cant write to ReadME
 #  Settings -> Workflow permissions -> Read and Write
+
+# Need ID to google docs + make google docs editable
+#  when linking google docs make sure this is at end of link: export?format=docx
+
+
 name: Sync README from Google Docs
 
 on:
@@ -25,9 +30,11 @@ jobs:
         run: |
           curl -L "https://docs.google.com/document/d/1000SSXmp7nY84KODqMCJnEy-OB3xn_8XsIbTUU7kL7E/export?format=docx" -o doc.docx
 
+      # html = formats it using html
+      # media-assets = show images
       - name: Convert to README.md
         run: |
-          pandoc doc.docx -t html -o README.md
+          pandoc doc.docx -t html --extract-media=assets -o README.md
 
       - name: Commit changes
         run: |
