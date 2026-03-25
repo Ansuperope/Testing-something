@@ -312,7 +312,24 @@ Sensor BME280 | Bosch Sensortec</u></a></p></th>
 <tbody>
 </tbody>
 </table>
-<p>Sensors + Coding</p>
+<p>How to Create</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><h2 id="general-notes">General Notes</h2></th>
+</tr>
+<tr class="odd">
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -386,7 +403,7 @@ href="https://wiki.seeedstudio.com/Grove-Laser_PM2.5_Sensor-HM3301/"><u>Grove
 </tr>
 <tr class="odd">
 <th><p>Pinout</p>
-<p><img src="assets/media/image4.png"
+<p><img src="assets/media/image3.png"
 style="width:3.10417in;height:1.79167in" /></p></th>
 <th><blockquote>
 <p>GND Black GND 5</p>
@@ -472,7 +489,7 @@ Shuttle Board 3.0 Flyer</u></a></p></th>
 <th colspan="2">Pinout</th>
 </tr>
 <tr class="odd">
-<th><p><img src="assets/media/image3.png"
+<th><p><img src="assets/media/image2.png"
 style="width:3.10417in;height:1.54167in" /></p>
 <p><img src="assets/media/image1.png"
 style="width:3.10417in;height:1.66667in" /></p></th>
@@ -511,7 +528,7 @@ style="width:3.10417in;height:1.66667in" /></p></th>
 </ul></th>
 </tr>
 <tr class="header">
-<th><img src="assets/media/image2.png"
+<th><img src="assets/media/image4.png"
 style="width:3.10417in;height:2.84722in" /></th>
 <th></th>
 </tr>
@@ -529,7 +546,193 @@ Wiki</u></a></p></th>
 <tbody>
 </tbody>
 </table>
-<p>Data Collection</p>
+<p>Flight Path</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><h2 id="flight-path">Flight Path</h2>
+<p>hardest will need to test a LOT</p></th>
+</tr>
+<tr class="odd">
+<th>How it will work:</th>
+<th><p>Program will grab data from a variety of sensors, save the
+data:</p>
+<ol type="1">
+<li><blockquote>
+<p>particulates</p>
+</blockquote></li>
+<li><blockquote>
+<p>gasses</p>
+</blockquote></li>
+<li><blockquote>
+<p>pressure</p>
+</blockquote></li>
+<li><blockquote>
+<p>humidity</p>
+</blockquote></li>
+</ol>
+<p>to csv files:</p>
+<ol type="1">
+<li><blockquote>
+<p>particulates.csv</p>
+</blockquote></li>
+<li><blockquote>
+<p>gasses.csv</p>
+</blockquote></li>
+<li><blockquote>
+<p>pressure.csv</p>
+</blockquote></li>
+<li><blockquote>
+<p>humidity.csv</p>
+</blockquote></li>
+</ol>
+<p>and transmit it to us live</p></th>
+</tr>
+<tr class="header">
+<th>What we need / need to know:</th>
+<th><ol type="1">
+<li><blockquote>
+<p>Rate of operations</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>rate read sensors</p>
+</blockquote></li>
+<li><blockquote>
+<p>rate sensors operate</p>
+</blockquote></li>
+<li><blockquote>
+<p>rate to transmit</p>
+</blockquote></li>
+<li><blockquote>
+<p>when to stop and start reading</p>
+</blockquote></li>
+</ol></li>
+<li><blockquote>
+<p>Radio:</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>power - how far can we be</p>
+</blockquote></li>
+<li><blockquote>
+<p>how long it takes to get a connection / start up</p>
+</blockquote></li>
+<li><blockquote>
+<p>frequency</p>
+</blockquote></li>
+</ol></li>
+</ol></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><h2 id="hardware">Hardware</h2></th>
+</tr>
+<tr class="odd">
+<th colspan="2"><h3 id="payload---on-rocket">Payload - On
+Rocket</h3></th>
+</tr>
+<tr class="header">
+<th>Protocol (components will be connected (communicate) / where wires
+will be)</th>
+<th><p>I2C: sensors</p>
+<ul>
+<li><blockquote>
+<p>dust</p>
+</blockquote></li>
+</ul>
+<p>UART: transmitting</p>
+<ul>
+<li><blockquote>
+<p>lora / radio</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th>Components + Their Roles</th>
+<th><ul>
+<li><blockquote>
+<p>Microcontroller: teensy</p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>where code goes</p>
+</blockquote></li>
+</ul></li>
+<li><blockquote>
+<p>Dust Sensor:</p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>ur mom</p>
+</blockquote></li>
+</ul></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="2">Wire Connections</th>
+</tr>
+<tr class="odd">
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><h2 id="coding-algorithms">Coding / Algorithms</h2></th>
+</tr>
+<tr class="odd">
+<th>Notes:</th>
+<th><strong>Control Variable / Condition:</strong> variable or condition
+that will determine when something will execute / run</th>
+</tr>
+<tr class="header">
+<th><strong>Flowchart</strong></th>
+<th><strong>Pseudo Code</strong></th>
+</tr>
+<tr class="odd">
+<th></th>
+<th><p>Variables</p>
+<p>Setup - will only happen once</p>
+<ol type="1">
+<li><blockquote>
+<p>configure motor</p>
+</blockquote></li>
+<li><blockquote>
+<p>initialize control variables</p>
+</blockquote></li>
+</ol>
+<p>Loop - will happen continuously</p>
+<ol type="1">
+<li></li>
+</ol></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Data Collection + Saving + Transmitting</p>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -590,17 +793,58 @@ data:</p>
 <li><blockquote>
 <p>rate to transmit</p>
 </blockquote></li>
+<li><blockquote>
+<p>when to stop and start reading</p>
+</blockquote></li>
 </ol></li>
-<li></li>
+<li><blockquote>
+<p>Radio:</p>
+</blockquote>
+<ol type="a">
+<li><blockquote>
+<p>power - how far can we be</p>
+</blockquote></li>
+<li><blockquote>
+<p>how long it takes to get a connection / start up</p>
+</blockquote></li>
+<li><blockquote>
+<p>frequency</p>
+</blockquote></li>
+</ol></li>
 </ol></th>
 </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><h2 id="hardware-1">Hardware</h2></th>
+</tr>
 <tr class="odd">
-<th colspan="2"><h3 id="hardware">Hardware</h3></th>
+<th colspan="2"><h3 id="payload---on-rocket-1">Payload - On
+Rocket</h3></th>
 </tr>
 <tr class="header">
 <th>Protocol (components will be connected (communicate) / where wires
 will be)</th>
-<th>I2C</th>
+<th><p>I2C: sensors</p>
+<ul>
+<li><blockquote>
+<p>dust</p>
+</blockquote></li>
+</ul>
+<p>UART: transmitting</p>
+<ul>
+<li><blockquote>
+<p>lora / radio</p>
+</blockquote></li>
+</ul></th>
 </tr>
 <tr class="odd">
 <th>Components + Their Roles</th>
@@ -631,7 +875,25 @@ will be)</th>
 <th></th>
 </tr>
 <tr class="header">
-<th colspan="2"><h3 id="coding-algorithm">Coding / Algorithm</h3></th>
+<th colspan="2"><h3 id="receiver---with-us">Receiver - WIth Us</h3></th>
+</tr>
+<tr class="odd">
+<th>Protocol (components will be connected (communicate) / where wires
+will be)</th>
+<th>UART: receiving</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><h2 id="code-algorithm">Code / Algorithm</h2></th>
 </tr>
 <tr class="odd">
 <th>Notes:</th>
@@ -639,25 +901,41 @@ will be)</th>
 that will determine when something will execute / run</th>
 </tr>
 <tr class="header">
+<th colspan="2"><h3 id="data-buffer---reading-and-transmitting">Data
+Buffer - Reading and Transmitting</h3></th>
+</tr>
+<tr class="odd">
+<th><strong>Flowchart</strong></th>
+<th><strong>Pseudo Code</strong></th>
+</tr>
+<tr class="header">
+<th></th>
+<th></th>
+</tr>
+<tr class="odd">
+<th colspan="2"><h3 id="saving-to-files">Saving to Files</h3></th>
+</tr>
+<tr class="header">
 <th><strong>Flowchart</strong></th>
 <th><strong>Pseudo Code</strong></th>
 </tr>
 <tr class="odd">
 <th></th>
-<th><p>Variables</p>
-<p>Setup - will only happen once</p>
-<ol type="1">
-<li><blockquote>
-<p>configure motor</p>
-</blockquote></li>
-<li><blockquote>
-<p>initialize control variables</p>
-</blockquote></li>
-</ol>
-<p>Loop - will happen continuously</p>
-<ol type="1">
-<li></li>
-</ol></th>
+<th></th>
+</tr>
+<tr class="header">
+<th colspan="2"><h3 id="transmitting">Transmitting</h3></th>
+</tr>
+<tr class="odd">
+<th><strong>Flowchart</strong></th>
+<th><strong>Pseudo Code</strong></th>
+</tr>
+<tr class="header">
+<th></th>
+<th></th>
+</tr>
+<tr class="odd">
+<th colspan="2"><h3 id="receiver">Receiver</h3></th>
 </tr>
 </thead>
 <tbody>
@@ -736,15 +1014,25 @@ attached to the ball that will be used to close and open payload</p>
 </ol></li>
 </ol></th>
 </tr>
-<tr class="odd">
-<th colspan="2"><h3 id="hardware-1">Hardware</h3></th>
-</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
 <tr class="header">
+<th colspan="2"><h2 id="hardware-2">Hardware</h2></th>
+</tr>
+<tr class="odd">
 <th>Protocol (components will be connected (communicate) / where wires
 will be)</th>
 <th>I2C</th>
 </tr>
-<tr class="odd">
+<tr class="header">
 <th>Components + Their Roles</th>
 <th><ul>
 <li><blockquote>
@@ -768,15 +1056,26 @@ will be)</th>
 </ul></li>
 </ul></th>
 </tr>
-<tr class="header">
+<tr class="odd">
 <th colspan="2">Wire Connections</th>
 </tr>
-<tr class="odd">
+<tr class="header">
 <th></th>
 <th></th>
 </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
 <tr class="header">
-<th colspan="2"><h3 id="coding-algorithm-1">Coding / Algorithm</h3></th>
+<th colspan="2"><h2 id="coding-algorithms-1">Coding /
+Algorithms</h2></th>
 </tr>
 <tr class="odd">
 <th>Notes:</th>
