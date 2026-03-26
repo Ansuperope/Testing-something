@@ -392,7 +392,7 @@ Controller</h2></th>
 <tr class="odd">
 <th><img src="assets/media/image1.png"
 style="width:3.10417in;height:4.38889in" /></th>
-<th><img src="assets/media/image3.png"
+<th><img src="assets/media/image6.png"
 style="width:3.10417in;height:4.38889in" /></th>
 </tr>
 <tr class="header">
@@ -657,9 +657,9 @@ Shuttle Board 3.0 Flyer</u></a></p></th>
 <th colspan="2">Pinout</th>
 </tr>
 <tr class="odd">
-<th><p><img src="assets/media/image2.png"
+<th><p><img src="assets/media/image3.png"
 style="width:3.10417in;height:1.54167in" /></p>
-<p><img src="assets/media/image6.png"
+<p><img src="assets/media/image2.png"
 style="width:3.10417in;height:1.66667in" /></p></th>
 <th><p>I2C</p>
 <ul>
