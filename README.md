@@ -390,7 +390,7 @@ Controller</h2></th>
 <th colspan="2">Pinout</th>
 </tr>
 <tr class="odd">
-<th><img src="assets/media/image3.png"
+<th><img src="assets/media/image1.png"
 style="width:3.10417in;height:4.38889in" /></th>
 <th><img src="assets/media/image5.png"
 style="width:3.10417in;height:4.38889in" /></th>
@@ -571,7 +571,7 @@ href="https://wiki.seeedstudio.com/Grove-Laser_PM2.5_Sensor-HM3301/"><u>Grove
 </tr>
 <tr class="odd">
 <th><p>Pinout</p>
-<p><img src="assets/media/image4.png"
+<p><img src="assets/media/image6.png"
 style="width:3.10417in;height:1.79167in" /></p></th>
 <th><blockquote>
 <p>GND Black GND 5</p>
@@ -657,9 +657,9 @@ Shuttle Board 3.0 Flyer</u></a></p></th>
 <th colspan="2">Pinout</th>
 </tr>
 <tr class="odd">
-<th><p><img src="assets/media/image6.png"
+<th><p><img src="assets/media/image3.png"
 style="width:3.10417in;height:1.54167in" /></p>
-<p><img src="assets/media/image2.png"
+<p><img src="assets/media/image4.png"
 style="width:3.10417in;height:1.66667in" /></p></th>
 <th><p>I2C</p>
 <ul>
@@ -696,7 +696,7 @@ style="width:3.10417in;height:1.66667in" /></p></th>
 </ul></th>
 </tr>
 <tr class="header">
-<th><img src="assets/media/image1.png"
+<th><img src="assets/media/image2.png"
 style="width:3.10417in;height:2.84722in" /></th>
 <th></th>
 </tr>
