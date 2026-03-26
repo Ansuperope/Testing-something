@@ -320,6 +320,25 @@ Sensor BME280 | Bosch Sensortec</u></a></p></th>
 </colgroup>
 <thead>
 <tr class="header">
+<th colspan="2"><h2 id="notes">Notes</h2></th>
+</tr>
+<tr class="odd">
+<th>Protocols</th>
+<th><a
+href="https://sparxeng.com/blog/hardware/a-quick-guide-to-communication-protocols"><u>A
+Quick Guide to Communication Protocols - Sparx Engineering</u></a></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
 <th colspan="2"><h2 id="teensy---controller">Teensy -
 Controller</h2></th>
 </tr>
@@ -371,7 +390,7 @@ Controller</h2></th>
 <th colspan="2">Pinout</th>
 </tr>
 <tr class="odd">
-<th><img src="assets/media/image3.png"
+<th><img src="assets/media/image1.png"
 style="width:3.10417in;height:4.38889in" /></th>
 <th><img src="assets/media/image2.png"
 style="width:3.10417in;height:4.38889in" /></th>
@@ -638,9 +657,9 @@ Shuttle Board 3.0 Flyer</u></a></p></th>
 <th colspan="2">Pinout</th>
 </tr>
 <tr class="odd">
-<th><p><img src="assets/media/image5.png"
+<th><p><img src="assets/media/image3.png"
 style="width:3.10417in;height:1.54167in" /></p>
-<p><img src="assets/media/image1.png"
+<p><img src="assets/media/image5.png"
 style="width:3.10417in;height:1.66667in" /></p></th>
 <th><p>I2C</p>
 <ul>
@@ -708,38 +727,7 @@ Wiki</u></a></p></th>
 </tr>
 <tr class="odd">
 <th>How it will work:</th>
-<th><p>Program will grab data from a variety of sensors, save the
-data:</p>
-<ol type="1">
-<li><blockquote>
-<p>particulates</p>
-</blockquote></li>
-<li><blockquote>
-<p>gasses</p>
-</blockquote></li>
-<li><blockquote>
-<p>pressure</p>
-</blockquote></li>
-<li><blockquote>
-<p>humidity</p>
-</blockquote></li>
-</ol>
-<p>to csv files:</p>
-<ol type="1">
-<li><blockquote>
-<p>particulates.csv</p>
-</blockquote></li>
-<li><blockquote>
-<p>gasses.csv</p>
-</blockquote></li>
-<li><blockquote>
-<p>pressure.csv</p>
-</blockquote></li>
-<li><blockquote>
-<p>humidity.csv</p>
-</blockquote></li>
-</ol>
-<p>and transmit it to us live</p></th>
+<th>Program will grab data from</th>
 </tr>
 <tr class="header">
 <th>What we need / need to know:</th>
